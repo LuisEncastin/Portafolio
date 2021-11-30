@@ -1,0 +1,175 @@
+
+/*
+1.- Posicionamiento.
+2.- Modelo de caja (Box model).
+3.- Tipografía.
+4.- Visuales
+5.- Otros.
+*/
+:root {
+/* Colores */
+    --blue-strong: #324763;
+    --black: #282623;
+    --grey: #bababa;
+    --just-white: #fff;
+}
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: yellowgreen; */
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+.section {
+    background-color: var(--blue-strong);
+    height: 667px;
+    width: 375px;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 1.4rem;
+    font-weight: 500px;
+    line-height: 1.8rem;
+    color: var(--just-white)
+}
+
+/* header */
+
+header {
+    background-color: var(--blue-strong);
+    height: 50px;
+}
+
+
+
+/* Principal */
+
+#principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal--photo {
+    background-color: whitesmoke;
+    height: 100px;
+    width: 100px;
+}
+
+.principal--text {
+    display: flex;
+    flex-direction: column;
+}
+
+.principal--text h1 {
+    text-align: center;
+}
+
+/* Introduction */
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#introduction div {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Skils */
+
+/* #skills{
+    padding: 20px;
+} */
+
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+.item5{background:PaleGreen;}
+
+.grid-container {
+    display: grid;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+/* Portfolio */
+
+.portfolio--container{
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio--container h3 {
+    text-align: center;
+}
+
+.portfolio--container .project p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project--caption {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.portfolio--subcontainer {
+    display: flex;
+    justify-content:space-around;
+}
+
+.project--button{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 140px;
+}
+
+
+/* Contact */
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer */
+.nav--footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.nav--footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.nav--footer ul li {
+    list-style: none;
+}
+
+footer div p {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
