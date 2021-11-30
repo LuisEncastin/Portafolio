@@ -9,6 +9,8 @@
 :root {
 /* Colores */
     --blue-strong: #324763;
+    --medium-blue: #1357B2;
+    --light-blue: #7FA4D7
     --black: #282623;
     --grey: #bababa;
     --just-white: #fff;
@@ -113,34 +115,52 @@ h2 {
     flex-direction: column;
 }
 
-.portfolio--container h3 {
-    text-align: center;
-}
-
-.portfolio--container .project p{
+.project {
+    height: auto;
+    max-height: 400px;
+    min-width: 340px;
+    max-width: 600px;
+    background-color: var(--medium-blue);
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.project--caption {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
+.project h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
 }
 
-.portfolio--subcontainer {
+.project p{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 5px;
+}
+
+.project--caption {
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    outline: white solid 2px;
+}
+
+.project--subcontainer {
     display: flex;
-    justify-content:space-around;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 280px;
+    margin-top: 20px;
 }
 
 .project--button{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    width: 140px;
+    width: 125px;
+    outline: white solid 3px;
 }
 
 
@@ -149,6 +169,45 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+legend {
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    top: 23px;
+    background-color: var(--blue-strong);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    margin-top: 15px;
+    align-items: baseline;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.formulario input, form textarea {
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 12px;
+    background-color: transparent;
+    outline: none;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+#submit {
+    margin: 10px auto;
+    padding: 10px 20px;
+    position: relative;
+    text-decoration: none;
 }
 
 /* Footer */

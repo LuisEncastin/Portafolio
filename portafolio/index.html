@@ -8,19 +8,25 @@
     <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/index.js"></script>
 </head>
 <body>
     <header>
-        <div class="topnav" id="myTopnav">
-            <a href="#principal" class="active">Logo</a>
-            <a href="#introduction">Introduction</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active" id="main--logo">Logo</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="#introduction">Introduction</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
+            <i class="fa fa-bars"></i>
             </a>
-          </div>
+        </div>
     </header>
     <section id="principal" class="section">
         <p>principal</p>
@@ -60,14 +66,14 @@
                 <div class="project--caption">
                     <img src="/" alt="Project Caption">
                 </div>
-                <div class="portfolio--subcontainer">
+                <div class="project--subcontainer">
                     <div class="project--button">
                         <p>project</p>
                         <img src="/" alt="simbol">
                     </div>
                     <div class="project--button">
                         <p>Github</p>
-                        <img src="/" alt="github--logo">
+                        <img src="/" alt="github">
                     </div>
                 </div>
             </div>
@@ -76,7 +82,16 @@
     <section id="contact" class="section">
         <p>Contact</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, debitis?</p>
-        <form action=""></form>
+        <legend>
+            <h2>Let's talk!</h2>
+        </legend>
+        <form action="#" class="formulario">
+            <input name="from_name" type="text" autocomplete="name" placeholder="Name" value="">
+            <input name="reply_to" type="text" autocomplete="email" placeholder="Mail" value="">
+            <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+            <button id="submit" class="button" type="submit">Send</button>
+            <p class="sent">I'll check your mail as soon as possible!</p>
+        </form>
     </section>
     <footer>
         <nav class="nav--footer">
