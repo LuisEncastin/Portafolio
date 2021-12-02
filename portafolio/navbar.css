@@ -1,52 +1,81 @@
-    /* Style the navigation menu */
-    
-    #main--logo{
-        color: white;
-        text-decoration: none;
-        font-size: 1.7rem; 
-    }
+/* NAVBAR */
+#main--logo{
+    margin-left: 15px;
+    height: 20px;
+    width: 150px;
+    background-image: url("https://imagizer.imageshack.com/v2/xq90/922/dECvgG.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    margin: 10px ; 
+}
 
-    .topnav {
-        display: flex;
-        flex-direction: row;
-        width: 100vw;
-        justify-content: space-between;
-        padding: 15px;
-    }
+.topnav {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+}
 
-    .topnav #myLinks {
-        display: flex;
-        flex-direction: row;
-        width: 300px;
-        justify-content: space-around;
-    }
+.topnav #myLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    justify-content: space-around;
+    padding: 5px 0;
+    margin-right: 3%;
+}
 
 
-    .topnav #myLinks a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.7rem;
-    }
-    .topnav a.icon {
-        display: none;
-    }
-    
+.topnav #myLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.7rem;
+    transition: all 0s; 
+}
 
+.topnav #myLinks a:hover {
+    text-decoration: underline #93AA0B solid 3px;
+    /* text-decoration-color:  #93AA0B;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px ; */
+}
+
+.topnav a.icon {
+    display: none;
+}
 
 @media screen and (max-width: 600px) {
+
+/* NAVBAR */
+/* header */
     /* Style the navigation menu */
-    .topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-    padding: 0px;
+
+    #main--logo{
+        margin-left: 15px;
+        height: 20px;
+        width: 150px;
+        background-image: url("https://imagizer.imageshack.com/v2/xq90/922/dECvgG.png");
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: 100%;
+        margin: 10px ; 
     }
-    
+
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+        padding: 0px;
+    }
+        
     /* Hide the links inside the navigation menu (except for logo/home) */
     .topnav #myLinks {
     display: none;
     }
-    
+
     /* Style navigation menu links */
     .topnav a {
     color: white;
@@ -55,7 +84,7 @@
     font-size: 17px;
     display: block;
     }
-    
+
     /* Style the hamburger menu */
     .topnav a.icon {
     background: black;
@@ -64,16 +93,17 @@
     right: 0;
     top: 0;
     }
-    
+
     /* Add a grey background color on mouse-over */
     .topnav a:hover {
     background-color: #ddd;
     color: black;
     }
-    
+
     /* Style the active link (or home/logo) */
     .active {
     background-color: var(--blue-strong);
     color: white;
     }
 }
+    

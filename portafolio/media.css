@@ -1,0 +1,90 @@
+@media screen and (min-width: 600px) {
+        /* SKILLS */
+
+        .grid-box{
+            background-color: var(--black);
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-size: 90%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        
+        .grid-container {
+            display: grid;
+            min-height: 500px;
+            width: 100%;
+            background: var(--gray);
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+        
+        #item--layer{
+            width: 100%;
+            height: 100%;
+            background: rgb(0,0,0);
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(18,18,18,0.804359243697479) 45%, rgba(43,43,43,0.5942752100840336) 70%, rgba(255,255,255,0) 100%);
+            transition: all 0.3s ease-in-out 0s ; 
+            opacity: 0%;
+            text-align: center;
+            font-size: 2.4em;
+            font-weight: 700;
+            color: var(--just-white);
+        }
+        #item--layer p{
+            position: relative;
+            top: 75%;
+        }
+        
+        #item--layer:hover{
+            opacity: 1;
+        } 
+    
+}
+
+@media screen and (min-width: 360px) {
+    /* SKILLS */
+
+    #skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 40px 10%;
+    }
+
+
+    .grid-container {
+        display: grid;
+        min-height: 400px;
+        width: 100%;
+        background: var(--gray);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 5px;
+    }
+
+    #item--layer{
+        width: 100%;
+        height: 100%;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(18,18,18,0.804359243697479) 45%, rgba(43,43,43,0.5942752100840336) 70%, rgba(255,255,255,0) 100%);
+        transition: all 0.3s ease-in-out 0s ; 
+        opacity: 1;
+        text-align: center;
+        font-size: 2.4em;
+        font-weight: 700;
+        color: var(--just-white);
+    }
+
+    #item--layer p{
+        position: relative;
+        top: 75%;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+}

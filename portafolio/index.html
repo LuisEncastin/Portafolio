@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luis Encastin</title>
     <link rel="stylesheet" href="/index.css">
-    <link rel="stylesheet" href="/navbar.css">
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/media.css">
+    <!-- <link rel="stylesheet" href="/media_tablet.css"> -->
     <script src="/index.js"></script>
 </head>
 <body>
     <header>
         <!-- Top Navigation Menu -->
         <div class="topnav">
-            <a href="#home" class="active" id="main--logo">Logo</a>
+            <a href="#home" class="active" id="main--logo"></a>
             <!-- Navigation links (hidden by default) -->
             <div id="myLinks">
                 <a href="#introduction">Introduction</a>
@@ -28,84 +30,204 @@
             </a>
         </div>
     </header>
-    <section id="principal" class="section">
-        <p>principal</p>
-        <div class="principal--photo">
-            <img src="/" alt="/">
-        </div>
-        <div class="principal--text">
-            <h1>Hello! 
-                <br>I'm Luis Encastin. 
-                <br> -Frontend Developer-
-            </h1>
-        </div>
-    </section>
+<div id="layer">
+    <div id="background">
+        <section id="principal" class="section">
+            <div class="principal--photo">
+            </div>
+            <div class="principal--text">
+                <h1>Hello!
+                    <strong><br><br>I'm Luis Encastin.</strong> 
+                    <br><br> - Web developer -
+                </h1>
+            </div>
+        </section>
+    </div>
+</div>
     <section id="introduction" class="section">
-        <p>introduction</p>
         <div>
-            <h2>who am i?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.-</p>
+            <h2>Who am I?</h2><br>
+            <h3>I'm a self-taught web developer and digital marketing passionate.</h3><br>
+            <p>I aspire to create meaningful digital solutions, always driven to achieve the best results for the final customer and my team.<br>
+            I’ve experience working within digital marketing teams using agile frameworks as SCRUM.</p><br>
+            <p><b>Name:</b> José Luis Encastin Flores</p>
+            <p><b>Age:</b> 26 years.</p>
+            <p><b>Location:</b> Toluca, Mexico.</p>
+            <p><b>Email:</b> luisencastin@gmail.com</p><br>
+            <div id="resume">
+                <p>If you want to know more about my background, you can check out my resume:</p>
+                <button class="resume--button">Resume</button>
+            </div>
         </div>
     </section>
     <section id="skills" class="section">
-        <p>Skills</p>
+        <h2>Skills</h2><br>
+        <p>Here are some technologies and tools that I´ve been working with:</p><br>
         <div class="grid-container">
-            <div class="item1">1</div>
-            <div class="item2">2</div>
-            <div class="item3">3</div>
-            <div class="item4">4</div>
-            <div class="item5">5</div>
+            <!-- HTML -->
+            <div id="item1" class="grid-box">
+                <div id="item--layer">
+                    <p>HTML 5</p>
+                </div>
+            </div> 
+            <!-- css -->
+            <div id="item2" class="grid-box">
+                <div id="item--layer">
+                    <p>CSS 3</p>
+                </div>
+            </div>
+            <!-- javascript -->
+            <div id="item3" class="grid-box">
+                <div id="item--layer">
+                    <p>Javascript</p>
+                </div>
+            </div>
+            <!-- sass -->
+            <div id="item4" class="grid-box">
+                <div id="item--layer">
+                    <p>Sass</p>
+                </div>
+            </div>
+            <!-- bootstrap -->
+            <div id="item5" class="grid-box">
+                <div id="item--layer">
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+            <!-- react -->
+            <div id="item6" class="grid-box">
+                <div id="item--layer">
+                    <p>React</p>
+                </div>
+            </div>
+            <!-- node -->
+            <div id="item7" class="grid-box">
+                <div id="item--layer">
+                    <p>Node js</p>
+                </div>
+            </div>
+            <!-- Mongo -->
+            <div id="item8" class="grid-box">
+                <div id="item--layer">
+                    <p>MongoDB</p>
+                </div>
+            </div>
+            <!-- git -->
+            <div id="item9" class="grid-box">
+                <div id="item--layer">
+                    <p>Git & Github</p>
+                </div>
+            </div>
+            <!-- Googleads -->
+            <div id="item10" class="grid-box">
+                <div id="item--layer">
+                    <p>Google Ads</p>
+                </div>
+            </div>
+            <!-- Google analytics -->
+            <div id="item11" class="grid-box">
+                <div id="item--layer">
+                    <p>Google analytics</p>
+                </div>
+            </div>
+            <!-- SEO -->
+            <div id="item12" class="grid-box">
+                <div id="item--layer">
+                    <p>SEO Marketing</p>
+                </div>
+            </div>
         </div>
     </section>
     <section id="portfolio" class="section">
-        <p>Portfolio</p>
+        <h2>Portfolio</h2><br>
+        <p>Through my studies, I have had the privilege of working on incredible and challenging projects.<br><br>
+            Here are some projects that I would like to share.</p>
         <div class="portfolio--container">
             <div class="project">
-                <h3>Project's name</h3>
+                <h3>Project's name1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, nisi.</p>
                 <div class="project--caption">
                     <img src="/" alt="Project Caption">
                 </div>
                 <div class="project--subcontainer">
                     <div class="project--button">
-                        <p>project</p>
-                        <img src="/" alt="simbol">
+                        <p>Project</p>
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/portfolio.png" style="height: 25px; width: 25px;"/>
                     </div>
                     <div class="project--button">
                         <p>Github</p>
-                        <img src="/" alt="github">
+                        <div class="icons8-github2__img"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio--container">
+            <div class="project">
+                <h3>Project's name2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, nisi.</p>
+                <div class="project--caption">
+                    <img src="/" alt="Project Caption">
+                </div>
+                <div class="project--subcontainer">
+                    <div class="project--button">
+                        <p>Project</p>
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/portfolio.png" style="height: 25px; width: 25px;"/>
+                    </div>
+                    <div class="project--button">
+                        <p>Github</p>
+                        <div class="icons8-github2__img"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio--container">
+            <div class="project">
+                <h3>Project's name3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, nisi.</p>
+                <div class="project--caption">
+                    <img src="/" alt="Project Caption">
+                </div>
+                <div class="project--subcontainer">
+                    <div class="project--button">
+                        <p>Project</p>
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/portfolio.png" style="height: 25px; width: 25px;"/>
+                    </div>
+                    <div class="project--button">
+                        <p>Github</p>
+                        <div class="icons8-github2__img"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="contact" class="section">
-        <p>Contact</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, debitis?</p>
-        <legend>
-            <h2>Let's talk!</h2>
-        </legend>
+        <h2>Contact</h2><br>
+        <p>If you have any questions about my services, or just want to say hello, feel free to contact me.</p>
         <form action="#" class="formulario">
             <input name="from_name" type="text" autocomplete="name" placeholder="Name" value="">
             <input name="reply_to" type="text" autocomplete="email" placeholder="Mail" value="">
-            <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+            <textarea name="message" id="message" placeholder="Message" cols="30" rows="5"></textarea>
             <button id="submit" class="button" type="submit">Send</button>
             <p class="sent">I'll check your mail as soon as possible!</p>
         </form>
     </section>
     <footer>
         <nav class="nav--footer">
+            <h4>You can also follow me at:</h4>
             <ul>
-                <li>Linkedin</li>
-                <li>Github</li>
-                <li>Platzi</li>
-                <li>Instagram</li>
-                <li>Whatsapp</li>
+                <li>
+                    <div id="icons8-linkedin-rodeado-de-círculo" class="footer--icon"></div>
+                </li>
+                <li>
+                    <div id="icons8-github" class="footer--icon"></div>
+                </li>
+                <li>
+                    <div id="icons8-whatsapp" class="footer--icon"></div>
+                </li>
             </ul>
+            <hr style="width:80%; margin: 20px 10% 0; ">
+            <div>
+                <p id="prueba">Site built by Luis Encastin - 2021</p>
+            </div>
         </nav>
-        <div>
-            <p>Site built by Luis Encastin - 2021</p>
-        </div>
     </footer>
 </body>
 </html>
